@@ -3,7 +3,6 @@ updates:
   - package-ecosystem: github-actions
     directory: /
     schedule:
-      interval: daily
-    open-pull-requests-limit: 10
-    reviewers:
-      - etu
+      interval: weekly
+    #reviewers:
+    #  - etu
