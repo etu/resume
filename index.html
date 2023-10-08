@@ -1,0 +1,1730 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+	<title>Elis Hirwing</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css"
+				integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+
+	<style>
+		/********************************************
+* 	reset from
+* 	http://meyerweb.com/eric/tools/css/reset/
+*******************************************/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+description,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/****************
+*	COMMONS
+****************/
+
+body,
+html {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 13px;
+  color: #40484f;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.46153846;
+  text-align: left;
+  -webkit-text-size-adjust: 100%;
+}
+
+p {
+  display: block;
+}
+
+a {
+  color: #0095ff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0c65a5;
+  text-decoration: underline;
+}
+
+li {
+  list-style-type: square;
+  list-style-position: outside;
+  margin-left: 1.3em;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h1 a {
+  display: inline;
+  margin-left: 10px;
+  font-size: 14px;
+  font-family: "freight-sans-pro", lato, sans-serif;
+  vertical-align: middle;
+}
+
+h1 a:hover {
+  cursor: pointer;
+}
+
+h2 {
+  font-size: 1.67rem;
+}
+
+h3 {
+  font-size: 1.27rem;
+}
+
+em {
+  color: #757575;
+}
+
+blockquote {
+  margin-bottom: 1em;
+}
+
+strong {
+  font-weight: 700;
+}
+
+/* main container */
+
+#resume {
+  padding: 1.5rem;
+}
+
+/* every section wrapper */
+
+.section {
+  margin-bottom: 1rem;
+}
+
+section .location {
+  margin-right: 0.5em;
+  color: #606d76;
+  font-weight: 700;
+}
+
+#contact {
+  margin-top: 0.5rem;
+}
+
+#profiles .item {
+  padding: 0;
+}
+
+#header>#profiles,
+#header>#contact,
+#skills,
+#languages,
+#interests {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+#header>div {
+  line-height: 1.5;
+}
+
+#header>div>div {
+  margin-right: 1.2em;
+}
+
+#header h1.name {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+#header h2.label {
+  color: #202931;
+  font-size: 1.47rem;
+  font-weight: 300;
+}
+
+#header .image {
+  width: 11em;
+  float: right;
+  border-radius: 4px;
+}
+
+.main-summary {
+  background: #f1f8ff;
+  padding: 1.2em 1em;
+  /* margin-top: 1rem; */
+}
+
+.main-summary p {
+  margin: 0;
+}
+
+.section-title {
+  display: inline-block;
+  background: #fff;
+  padding: 0 1em 0.3em 0;
+  color: #ff6d1f;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: none;
+  font-size: 0.9rem;
+}
+
+.section>header {
+  position: relative;
+}
+
+.fa {
+  margin-right: 0.25em;
+}
+
+.section>header::after {
+  position: absolute;
+  left: 0;
+  top: 0.7em;
+  height: 1px;
+  background: #ccc;
+  content: "";
+  width: 100%;
+  z-index: -100;
+  display: block;
+}
+
+.section.main-summary>section {
+  margin: 0;
+}
+
+.section>section>header {
+  font-size: 1.38rem;
+  position: relative;
+  margin-top: 0.7em;
+}
+
+.section>section>header:first-of-type {
+  margin: 0;
+}
+
+.section>section>header .space-left {
+  position: absolute;
+  left: -1.56rem;
+  top: 5px;
+  color: #aaa;
+  line-height: 1;
+  opacity: 0;
+}
+
+.project,
+.position,
+.company,
+.roles,
+.organization,
+.institution,
+.date,
+.area,
+.studyType,
+.title,
+.awarder {
+  display: inline;
+}
+
+.project,
+.position,
+.studyType,
+.area,
+.title,
+.language,
+.name {
+  font-weight: 600;
+}
+
+.company::before,
+.institution::before,
+.organization::before,
+.awarder::before {
+  content: "at ";
+}
+
+.roles::before {
+  content: "as "
+}
+
+.area::before {
+  content: "in "
+}
+
+.company,
+.roles,
+.institution,
+.organization,
+.awarder {
+  color: #606d76;
+  font-weight: 400;
+}
+
+.section header .date {
+  display: block;
+  font-size: 1rem;
+  padding: 0.1em 0;
+  color: #606d76;
+  font-weight: 400;
+}
+
+.keywords,
+.courses {
+  margin: 0.5em 0;
+}
+
+.keywords li,
+.courses li {
+  display: inline-block;
+  margin: 2px 2px 2px 0;
+  padding: 4px 5px 5px;
+  font-size: 0.9rem;
+  line-height: 1;
+  color: #3e6d8e;
+  background-color: #dfeaf1;
+  border: 0 solid #dfeaf1;
+  white-space: nowrap;
+}
+
+.keywords li:hover,
+.courses li:hover {
+  background: #dfeaf0;
+}
+
+.highlights {
+  margin: 1em 0 0 0;
+}
+
+.highlights>li>p {
+  margin-bottom: 0.5em;
+}
+
+.item {
+  overflow: hidden;
+}
+
+.score {
+  clear: both;
+  padding-bottom: 0.5em;
+}
+
+.fa.social {
+  font-size: 1.1em;
+}
+
+/* Social Media Brand Colors */
+
+.google-plus {
+  color: #dd4b39;
+}
+
+.tumblr {
+  color: #32506d;
+}
+
+.foursquare {
+  color: #0072b1;
+}
+
+.facebook {
+  color: #3b5998;
+}
+
+.linkedin {
+  color: #007bb6;
+}
+
+.pinterest {
+  color: #cb2027;
+}
+
+.dribbble {
+  color: #ea4c89;
+}
+
+.instagram {
+  color: #517fa4;
+}
+
+.twitter {
+  color: #00aced;
+}
+
+.soundcloud {
+  color: #ff3a00;
+}
+
+.wordpress {
+  color: #21759b;
+}
+
+.youtube {
+  color: #bb0000;
+}
+
+.github {
+  color: #171515;
+}
+
+.stack-overflow {
+  color: #828386;
+  position: relative;
+}
+
+.flickr {
+  color: #ff0084;
+}
+
+.reddit {
+  color: #ff4500;
+}
+
+.hacker-news {
+  color: #ff6600;
+}
+
+.stack-overflow::after {
+  position: absolute;
+  left: 0;
+  content: "\f16c";
+  color: #f68a1f;
+  overflow: hidden;
+  height: 100%;
+}
+
+.telegram {
+  color: #2291c3;
+}
+
+#languages .item,
+#skills .item,
+#interests .item {
+  width: 15em;
+  padding: 0 0.5em 0.5em 0;
+  border-bottom: none;
+}
+
+#skills .item {
+  width: 16em;
+}
+
+#skills .item .keywords {
+  width: 15em;
+}
+
+/* Skill chart */
+
+.level {
+  margin-bottom: 0.5em;
+}
+
+.level em {
+  padding-left: 0.2em;
+}
+
+.level .bar {
+  border: 1px solid #ddd;
+  display: block;
+  width: 10em;
+  height: 5px;
+  position: relative;
+}
+
+.level .bar::after {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  background: black;
+  height: 5px;
+}
+
+.level.beginner .bar::after {
+  background: #eb5f51;
+  width: 2.5em;
+}
+
+.level.intermediate .bar::after {
+  background: #ffdf1f;
+  width: 5em;
+}
+
+.level.advanced .bar::after,
+.level.fluent .bar::after {
+  background: #5cb85c;
+  width: 7.5em;
+}
+
+.level.master .bar::after,
+.level.native.speaker .bar::after {
+  background: #59c596;
+  width: 10em;
+}
+
+#references .item {
+  padding-left: 0.5em;
+  border-left: 5px solid #ff6d1f;
+}
+
+.toggle-item {
+  display: none;
+}
+
+.section>section>section {
+  margin-bottom: 0.5rem;
+}
+
+/******************
+*	HELPER CLASSES
+******************/
+
+.clear::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.display {
+  display: block;
+  opacity: 1 !important;
+}
+
+/****************
+*		TABLET
+****************/
+
+@media screen and (min-width: 602px) {
+  #resume {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .section header .date {
+    float: right;
+    font-weight: 600;
+    color: #000;
+  }
+}
+
+/****************
+*		LAPTOP
+****************/
+
+@media screen and (min-width: 1025px) {
+  li {
+    margin-left: 1.5em;
+  }
+
+  #resume {
+    width: 820px;
+    margin: 2rem auto;
+  }
+
+  .section>section>header .space-left {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  .section>section:not(.main-summary) {
+    margin-left: 1.67rem;
+  }
+
+  .toggle-item {
+    transform: translate(-9999px);
+  }
+
+  .toggle-item+label {
+    display: block;
+  }
+
+  .toggle-item:checked+label:after {
+    content: "\f0d7";
+  }
+
+  .toggle-item+label:after {
+    float: left;
+    cursor: pointer;
+    margin-left: -20px;
+    color: #aaa;
+    font-size: 16px;
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    content: "\f0da";
+  }
+
+  .toggle-item~.item {
+    height: 0;
+    opacity: 0;
+  }
+
+  .toggle-item:checked~.item {
+    height: auto;
+    opacity: 1;
+    transition: all 0.5s linear;
+  }
+
+  .company::before,
+  .roles::before,
+  .area::before,
+  .institution::before,
+  .organization::before,
+  .awarder::before {
+    content: "| ";
+  }
+
+  .header-left {
+    float: left;
+    width: 70%;
+    word-break: normal;
+  }
+
+  .section header .date {
+    padding: 0.2em;
+  }
+
+  .display {
+    display: none;
+  }
+
+  .display:not(.none) {
+    display: block;
+  }
+}
+
+@media print {
+  a:not(.hide-href-print)::after {
+    content: " (" attr(href) ") ";
+  }
+
+  #resume {
+    margin: 0.1em;
+    padding: 0.1em;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    line-height: 1.25;
+  }
+
+  @page {
+    margin: 1cm 1.4cm;
+  }
+
+  .item-count {
+    display: none;
+  }
+
+  .company::before,
+  .institution::before,
+  .organization::before,
+  .awarder::before {
+    content: "at ";
+  }
+
+  .roles::before {
+    content: "as "
+  }
+
+  .main-summary {
+    padding: 0;
+    background: transparent;
+  }
+
+  .section {
+    margin: 0.8rem 0;
+    padding: 0;
+  }
+
+  .section header {
+    padding-bottom: 0.15rem;
+  }
+
+  .section .location {
+    padding-bottom: 0.15rem;
+  }
+
+  .section>section>section {
+    margin: 0 0 1em 0;
+  }
+
+  .section>section>section:last-of-type {
+    margin: 0;
+  }
+
+  .stack-overflow::after {
+    content: "";
+  }
+
+  .fa.social {
+    color: #828386;
+  }
+
+  ul {
+    margin-top: 0.4em;
+  }
+
+  ul,
+  li {
+    padding: 0;
+  }
+
+  ul.keywords li,
+  ul.courses li {
+    margin: 0;
+    padding: 0;
+    font-size: 0.8rem;
+    background: transparent;
+  }
+
+  ul.keywords li::after,
+  ul.courses li::after {
+    padding: 0 0 0 0.1rem;
+    content: " |";
+  }
+
+  ul.keywords::before,
+  ul.courses::before {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+
+  #skills .item {
+    width: calc(100% / 3);
+    padding: 0;
+  }
+
+  .highlights {
+    margin: 0.5em 0 0 0;
+  }
+
+  ul.keywords::before {
+    content: "Skills acquired: ";
+  }
+
+  #skills .keywords::before {
+    content: none;
+  }
+
+  .section p {
+    margin: 0;
+    padding: 0;
+  }
+
+  ul.courses::before {
+    content: "Major courses: ";
+  }
+
+  ul.keywords li:last-of-type::after,
+  ul.courses li:last-of-type::after {
+    content: "";
+  }
+
+  .level em {
+    font-style: normal;
+    padding: 0.1em 0;
+  }
+
+  .level .bar {
+    display: none;
+  }
+
+  #profiles .item {
+    padding: 0;
+  }
+
+  .item.display {
+    display: block;
+    opacity: 1 !important;
+  }
+
+  .fa-map-marker-alt:before {
+    padding-left: 0.1em;
+  }
+}
+	</style>
+
+</head>
+<body>
+
+<div id="resume">
+	  <header id="header" class="clear">
+	
+	      <img class="image" src="./headshot.jpg" alt="Elis Hirwing" />
+	      <div class="middle">
+	        <h1 class="name">Elis Hirwing<a href="https://github.com/IsFilimonov/jsonresume-theme-fullmoon" target="_blank">🌑🌕</a></h1>
+	        <h2 class="label">Lead Backend Developer</h2>
+	      </div>
+	
+	      <span class="location fas fa-map-marker-alt">
+	
+	          <span class="address">Repslagaregatan 20A,</span>
+	
+	          <span class="postalCode">67130,</span>
+	
+	          <span class="city">Arvika,</span>
+	
+	          <span class="region">Värmlands Län,</span>
+	
+	          <span class="countryCode">SE</span>
+	      </span>
+	
+	
+	    
+	
+	    <div id="contact">
+	        <div class="url">
+	          <span class="fas fa-external-link-alt"></span>
+	          <a
+	            class="hide-href-print"
+	            target="_blank"
+	            href="https://elis.nu"
+	          >https://elis.nu</a>
+	        </div>
+	        <div class="email">
+	          <span class="far fa-envelope"></span>
+	          <a class="hide-href-print" href="mailto:elis@hirwing.se">elis@hirwing.se</a>
+	        </div>
+	        <div class="phone">
+	          <span class="fas fa-mobile-alt"></span>
+	          <a class="hide-href-print" href="tel:+46 452 12 98">+46 452 12 98</a>
+	        </div>
+	    </div>
+	
+	      <div id="profiles">
+	
+	            <div class="item">
+	
+	                <div class="username">
+	                  <span
+	                    class="fab fa-linkedin
+	                      linkedin
+	                      social"
+	                  ></span>
+	                    <span class="url">
+	                      <a target="_blank" href="https://linkedin.com/in/elishirwing/">elishirwing</a>
+	                    </span>
+	                </div>
+	
+	
+	
+	            </div>
+	            <div class="item">
+	
+	                <div class="username">
+	                  <span
+	                    class="fab fa-github
+	                      github
+	                      social"
+	                  ></span>
+	                    <span class="url">
+	                      <a target="_blank" href="https://github.com/etu">etu</a>
+	                    </span>
+	                </div>
+	
+	
+	
+	            </div>
+	      </div>
+	  </header>
+	
+	    <section class="section">
+	      <section class="main-summary">
+	        <div>
+	          <p>I'm DevOps engineer who can manage everything from backend API development. Managing operating systems. Backups and restoration. Even hardware purchases for on-premises hardware.</p>
+	        </div>
+	      </section>
+	    </section>
+	
+		<section class="section">
+			<header>
+				<h2 class='section-title'>Skills</h2>
+			</header>
+	
+			<section id="skills">
+					<div class="item">
+							<h3 class="name">
+								Web Development
+							</h3>
+	
+							<div class="level master">
+									<em>Master</em>
+								<div class="bar"></div>
+							</div>
+	
+							<ul class="keywords">
+									<li>PHP</li>
+									<li>HTML</li>
+									<li>CSS</li>
+									<li>SQL</li>
+									<li>MySQL</li>
+									<li>PostgresQL</li>
+									<li>Redis</li>
+									<li>Memcache</li>
+									<li>Docker</li>
+							</ul>
+					</div>
+					<div class="item">
+							<h3 class="name">
+								Operating systems
+							</h3>
+	
+							<div class="level master">
+									<em>Master</em>
+								<div class="bar"></div>
+							</div>
+	
+							<ul class="keywords">
+									<li>NixOS</li>
+									<li>Docker</li>
+									<li>Ubuntu</li>
+									<li>Arch Linux</li>
+									<li>Red Hat</li>
+									<li>Gentoo</li>
+							</ul>
+					</div>
+					<div class="item">
+							<h3 class="name">
+								Systems Programming
+							</h3>
+	
+							<div class="level master">
+									<em>Master</em>
+								<div class="bar"></div>
+							</div>
+	
+							<ul class="keywords">
+									<li>Nix</li>
+									<li>Shell (sh)</li>
+									<li>Shell (bash)</li>
+									<li>Shell (fish)</li>
+									<li>Go</li>
+									<li>Python</li>
+							</ul>
+					</div>
+			</section>
+		</section>
+		<section class="section">
+			<header>
+				<h2 class='section-title'>Work Experience <span class="item-count">(6)</span></h2>
+			</header>
+	
+			<section id="work">
+				<section class="work-item">
+	
+								<input id="work-item-0" type="checkbox" class="toggle-item" checked="checked"/>
+							<label for="work-item-0"></label>
+	
+						<header class="clear">
+								<div class="position">Senior / Lead Backend Developer</div>
+	
+							<div class="company">
+									<a target="_blank" href="https://tv.nu">TV.nu Sweden AB</a>
+							</div>
+	
+							<div class="date">
+									<span class="startDate">Apr 2016</span>
+									<span class="endDate">- Current</span>
+							</div>
+						</header>
+	
+							<span class="location">
+								<span class="fas fa-map-marker-alt"></span>
+								<span>Stockholm / Remote</span>
+								</span>
+	
+	
+					<div class="item" id="work-item">
+							<div class="summary"><p>Started as Senior Backend Developer at TV.nu, the biggest TV and VOD-Guide in Sweden. The Backend Team is responsible for server maintenance, development of the API's for the clients and ingestion of both linear TV data and VOD-data from different third parties.</p></div>
+	
+							<ul class="highlights">
+									<li><p>Responsible to set up HAProxy in front of the site with TLS termination to introduce HTTPS.</p></li>
+									<li><p>Upgraded from PHP 5.5 to 7.1.</p></li>
+									<li><p>Introduced the modular start page API with client capabilities to choose what to show on different clients.</p></li>
+									<li><p>Upgraded from PHP 7.1 to 7.3.</p></li>
+									<li><p>Upgraded from PHP 7.3 to 8.1.</p></li>
+									<li><p>Migrated to Docker.</p></li>
+									<li><p>Migrated infrastructure from classical hosting with PHP and Nginx to on-premises Kubernetes.</p></li>
+									<li><p>Upgraded Percona (MySQL) 5.6 to MariaDB 10.6 without downtime.</p></li>
+							</ul>
+					</div>
+				</section>
+				<section class="work-item">
+	
+								<input id="work-item-1" type="checkbox" class="toggle-item"/>
+							<label for="work-item-1"></label>
+	
+						<header class="clear">
+								<div class="position">Web developer for Shopello</div>
+	
+							<div class="company">
+									<a target="_blank" href="https://shopello.se">Shopello International AB / 203 Brands AB</a>
+							</div>
+	
+							<div class="date">
+									<span class="startDate">Apr 2014</span>
+									<span class="endDate">- Apr 2016</span>
+							</div>
+						</header>
+	
+							<span class="location">
+								<span class="fas fa-map-marker-alt"></span>
+								<span>Stockholm</span>
+								</span>
+	
+	
+					<div class="item" id="work-item">
+							<div class="summary"><p>My primary role were to work on Shopello.se which is a shopping search engine with an API for bartners. We worked a lot with ingestion of huge amounts of XML and CSV in PHP.</p></div>
+	
+							<ul class="highlights">
+									<li><p>I pioneered a new faster API that used signed data rather than unique entries in a database to be able to generate trusted links on the fly in the API to scale it better.</p></li>
+									<li><p>I introduced streaming XML files rather than reading them in full.</p></li>
+							</ul>
+					</div>
+				</section>
+				<section class="work-item">
+	
+								<input id="work-item-2" type="checkbox" class="toggle-item"/>
+							<label for="work-item-2"></label>
+	
+						<header class="clear">
+								<div class="position">Web developer / Server admin</div>
+	
+							<div class="company">
+									<a target="_blank" href="https://www.tailorstore.com/">Tailor Store Sweden AB</a>
+							</div>
+	
+							<div class="date">
+									<span class="startDate">Nov 2011</span>
+									<span class="endDate">- Apr 2014</span>
+							</div>
+						</header>
+	
+							<span class="location">
+								<span class="fas fa-map-marker-alt"></span>
+								<span>Helsingborg</span>
+								</span>
+	
+	
+					<div class="item" id="work-item">
+							<div class="summary"><p>My primary role were development, bugfixing and maintenance of the main homepage and admin systems. I also maintained the servers and the office network.</p></div>
+	
+							<ul class="highlights">
+									<li><p>Key role in purchases of new servers on several occasions.</p></li>
+									<li><p>Key role in designing the flexible product design API that is still in use.</p></li>
+									<li><p>Upgraded from PHP 5.3 to 5.4.</p></li>
+							</ul>
+					</div>
+				</section>
+				<section class="work-item">
+	
+								<input id="work-item-3" type="checkbox" class="toggle-item"/>
+							<label for="work-item-3"></label>
+	
+						<header class="clear">
+								<div class="position">Cluster builder</div>
+	
+							<div class="company">
+									<a target="_blank" href="https://southpole.se">South Pole AB</a>
+							</div>
+	
+							<div class="date">
+									<span class="startDate">Sep 2011</span>
+									<span class="endDate">- Nov 2011</span>
+							</div>
+						</header>
+	
+							<span class="location">
+								<span class="fas fa-map-marker-alt"></span>
+								<span>Stockholm</span>
+								</span>
+	
+	
+					<div class="item" id="work-item">
+							<div class="summary"><p>Short time contract to assemble computer clusters for universities in Sweden with more than 400 computers per cluster.</p></div>
+	
+					</div>
+				</section>
+				<section class="work-item">
+	
+								<input id="work-item-4" type="checkbox" class="toggle-item"/>
+							<label for="work-item-4"></label>
+	
+						<header class="clear">
+								<div class="position">Web Developer</div>
+	
+							<div class="company">
+									<a target="_blank" href="https://webhallen.com">Webhallen Sverige AB</a>
+							</div>
+	
+							<div class="date">
+									<span class="startDate">Jan 2011</span>
+									<span class="endDate">- Aug 2011</span>
+							</div>
+						</header>
+	
+							<span class="location">
+								<span class="fas fa-map-marker-alt"></span>
+								<span>Stockholm</span>
+								</span>
+	
+	
+					<div class="item" id="work-item">
+							<div class="summary"><p>Most of my work were to do website maintenance and bugfixes. I also did maintenance of internal admin systems.</p></div>
+	
+							<ul class="highlights">
+									<li><p>Key role in implementing imports of data sheets from external systems.</p></li>
+									<li><p>Key role in implementing DLC product keys for game purchases.</p></li>
+							</ul>
+					</div>
+				</section>
+				<section class="work-item">
+	
+								<input id="work-item-5" type="checkbox" class="toggle-item"/>
+							<label for="work-item-5"></label>
+	
+						<header class="clear">
+								<div class="position">IT-Support / Web Admin / Web Developer</div>
+	
+							<div class="company">
+									Clinicbuddy ekonomisk förening
+							</div>
+	
+							<div class="date">
+									<span class="startDate">Mar 2010</span>
+									<span class="endDate">- Nov 2010</span>
+							</div>
+						</header>
+	
+							<span class="location">
+								<span class="fas fa-map-marker-alt"></span>
+								<span>Stockholm</span>
+								</span>
+	
+	
+					<div class="item" id="work-item">
+							<div class="summary"><p>Most of my work was to answer phone calls to support the software in a Windows environment. I were also part of bootstrapping the development of a new web-based project for future endeavors.</p></div>
+	
+					</div>
+				</section>
+			</section>
+		</section>
+		<section class="section">
+			<header>
+				<h2 class='section-title'>Projects <span class="item-count">(1)</span></h2>
+			</header>
+	
+			<section id="projects">
+					<section class="project-item">
+								<input id="project-item-0" type="checkbox" class="toggle-item"/>
+							<label for="project-item-0"></label>
+	
+							<header class="clear">
+									<div class="project">
+											NixOS advocate
+									</div>
+	
+								<div class="company">NixOS</div>
+									<div class="roles">
+												<span class="role">Package maintainer, </span>
+												<span class="role">User</span>
+									</div>
+	
+									<div class="date">
+										<span class="startDate">Jul 2017</span>
+											<span class="endDate">- Current</span>
+									</div>
+							</header>
+	
+	
+							<ul class="keywords">
+									<li>PHP</li>
+									<li>composer</li>
+									<li>ZFS</li>
+									<li>Operating systems</li>
+									<li>Deployments</li>
+							</ul>
+	
+						<div class="item">
+								<div class="description">Nix is fun</div>
+	
+								<ul class="highlights">
+										<li><p>Part of modular PHP builds.</p></li>
+										<li><p>Part of bootstrapping of the emacs overlay.</p></li>
+										<li><p>Part of the creation of of impermanence project.</p></li>
+										<li><p>Author of the well known blog post 'NixOS ❄: tmpfs as root'.</p></li>
+										<li><p>Motivation and support to get support to build PHP composer packages in nixpkgs.</p></li>
+								</ul>
+						</div>
+					</section>
+			</section>
+		</section>
+		<section class="section">
+			<header>
+				<h2 class='section-title'>Education <span class="item-count">(4)</span></h2>
+			</header>
+	
+			<section id="education">
+					<section class="education-item">
+								<input id="education-item-0" type="checkbox" class="toggle-item"/>
+							<label for="education-item-0"></label>
+						
+							<header class="clear">
+	
+										<div class="studyType">Two-day Course</div>
+										<div class="area">CE Certification of software in medicine technical products</div>
+	
+	
+									<div class="date">
+										<span class="startDate">Oct 2010</span>
+											<span class="endDate">- Oct 2010</span>
+									</div>
+							</header>
+	
+						<div class="item">
+	
+								<div class='score'>
+									<strong> Grade:</strong> <span>Passed</span>
+								</div>
+	
+						</div>
+	
+					</section>
+					<section class="education-item">
+								<input id="education-item-1" type="checkbox" class="toggle-item"/>
+							<label for="education-item-1"></label>
+	
+							<header class="clear">
+	
+										<div class="studyType">Weekend-course</div>
+										<div class="area">Amateur radio certification</div>
+										<div class="institution">SK0̷QO</div>
+	
+	
+									<div class="date">
+										<span class="startDate">Mar 2010</span>
+											<span class="endDate">- Apr 2010</span>
+									</div>
+							</header>
+	
+						<div class="item">
+								<ul class="courses">
+										<li>Technical and safety</li>
+										<li>Regulation</li>
+								</ul>
+	
+								<div class='score'>
+									<strong> Grade:</strong> <span>Passed</span>
+								</div>
+	
+						</div>
+	
+					</section>
+					<section class="education-item">
+								<input id="education-item-2" type="checkbox" class="toggle-item"/>
+							<label for="education-item-2"></label>
+	
+							<header class="clear">
+	
+										<div class="studyType">Full-time</div>
+										<div class="area">Mathematics</div>
+										<div class="institution">Stockholms Universitet</div>
+	
+	
+									<div class="date">
+										<span class="startDate">Jan 2009</span>
+											<span class="endDate">- Feb 2009</span>
+									</div>
+							</header>
+	
+						<div class="item">
+								<ul class="courses">
+										<li>Mathematics</li>
+								</ul>
+	
+								<div class='score'>
+									<strong> Grade:</strong> <span>Did not complete</span>
+								</div>
+	
+						</div>
+	
+					</section>
+					<section class="education-item">
+								<input id="education-item-3" type="checkbox" class="toggle-item"/>
+							<label for="education-item-3"></label>
+	
+							<header class="clear">
+	
+										<div class="studyType">High-School</div>
+										<div class="area">Technical, Computers, Physics and Math program</div>
+										<div class="institution">S:t Eriks Gymnasium</div>
+	
+	
+									<div class="date">
+										<span class="startDate">Aug 2005</span>
+											<span class="endDate">- Jun 2008</span>
+									</div>
+							</header>
+	
+						<div class="item">
+								<ul class="courses">
+										<li>Computers</li>
+										<li>Mathematics</li>
+										<li>Networking</li>
+										<li>Physics</li>
+										<li>Programming</li>
+										<li>Technical</li>
+								</ul>
+	
+	
+						</div>
+	
+					</section>
+			</section>
+		</section>
+		<section class="section">
+			<header>
+				<h2 class='section-title'>Volunteer</h2>
+			</header>
+			<section id="volunteer">
+					<section class="volunteer-item">
+	
+									<!--checked="checked" turn off-->
+									<input id="volunteer-item-0" type="checkbox" class="toggle-item"/>
+								<label for="volunteer-item-0"></label>
+	
+							<header class="clear">
+	
+										<div class="position">
+											Secretary
+										</div>
+									<div class="organization">
+										Sparv - Spel i Arvika
+									</div>
+	
+								<div class="date">
+										<span class="startDate">
+											Jan 2023
+										</span>
+										<span class="endDate">
+	          - Current
+	          </span>
+								</div>
+							</header>
+						<div class="item">
+								<div class="summary"><p>Secretary of the board of the non-profit gaming association in Arvika.</p></div>
+						</div>
+					</section>
+					<section class="volunteer-item">
+	
+									<input id="volunteer-item-1" type="checkbox" class="toggle-item"/>
+								<label for="volunteer-item-1"></label>
+	
+							<header class="clear">
+	
+										<div class="position">
+											Vice-President
+										</div>
+									<div class="organization">
+										Riksbyggen Bostadsrättsförening Arvikahus nr 3
+									</div>
+	
+								<div class="date">
+										<span class="startDate">
+											Jan 2022
+										</span>
+										<span class="endDate">
+	          - Current
+	          </span>
+								</div>
+							</header>
+						<div class="item">
+								<div class="summary"><p>Vice-President of the board of the association that owns the buildings I live in.</p></div>
+						</div>
+					</section>
+					<section class="volunteer-item">
+	
+									<input id="volunteer-item-2" type="checkbox" class="toggle-item"/>
+								<label for="volunteer-item-2"></label>
+	
+							<header class="clear">
+	
+										<div class="position">
+											Board Member / Auditor
+										</div>
+									<div class="organization">
+										Unga Forskare Stockholm
+									</div>
+	
+								<div class="date">
+										<span class="startDate">
+											Jan 2016
+										</span>
+										<span class="endDate">
+	          - Jan 2019
+	          </span>
+								</div>
+							</header>
+						<div class="item">
+								<div class="summary"><p>Some years I was an auditor of the board and some other years I was part of the board.</p></div>
+						</div>
+					</section>
+					<section class="volunteer-item">
+	
+									<input id="volunteer-item-3" type="checkbox" class="toggle-item"/>
+								<label for="volunteer-item-3"></label>
+	
+							<header class="clear">
+	
+										<div class="position">
+											Organizer
+										</div>
+									<div class="organization">
+										Stockholm Linux User Group
+									</div>
+	
+								<div class="date">
+										<span class="startDate">
+											Jan 2010
+										</span>
+										<span class="endDate">
+	          - Jan 2011
+	          </span>
+								</div>
+							</header>
+						<div class="item">
+								<div class="summary"><p>Responsible for making sure Proxxi was opened so Stockholm Linux User Group could meet up there every Monday.</p></div>
+						</div>
+					</section>
+					<section class="volunteer-item">
+	
+									<input id="volunteer-item-4" type="checkbox" class="toggle-item"/>
+								<label for="volunteer-item-4"></label>
+	
+							<header class="clear">
+	
+										<div class="position">
+											Server team
+										</div>
+									<div class="organization">
+										Sverok
+									</div>
+	
+								<div class="date">
+										<span class="startDate">
+											Jan 2010
+										</span>
+										<span class="endDate">
+	          - Jan 2011
+	          </span>
+								</div>
+							</header>
+						<div class="item">
+								<div class="summary"><p>Participated in the server team's work this year, I learned much from but didn't help out much during this time. The Server team maintains the organizations servers and the technical questions from member organizations.</p></div>
+						</div>
+					</section>
+					<section class="volunteer-item">
+	
+									<input id="volunteer-item-5" type="checkbox" class="toggle-item"/>
+								<label for="volunteer-item-5"></label>
+	
+							<header class="clear">
+	
+										<div class="position">
+											President
+										</div>
+									<div class="organization">
+										Konventare.se
+									</div>
+	
+								<div class="date">
+										<span class="startDate">
+											Jan 2008
+										</span>
+										<span class="endDate">
+	          - Jan 2010
+	          </span>
+								</div>
+							</header>
+						<div class="item">
+								<div class="summary"><p>Founded Konventare.se where some friends and I listed most Games and Anime conventions in Sweden to make one go-to place for people to find them.</p></div>
+						</div>
+					</section>
+					<section class="volunteer-item">
+	
+									<input id="volunteer-item-6" type="checkbox" class="toggle-item"/>
+								<label for="volunteer-item-6"></label>
+	
+							<header class="clear">
+	
+										<div class="position">
+											Representative at Annual meeting
+										</div>
+									<div class="organization">
+										Sverok
+									</div>
+	
+								<div class="date">
+										<span class="startDate">
+											Jan 2008
+										</span>
+										<span class="endDate">
+	          - Jan 2010
+	          </span>
+								</div>
+							</header>
+						<div class="item">
+								<div class="summary"><p>Represented several different non-profit organizations interests at the big annual meeting.</p></div>
+						</div>
+					</section>
+					<section class="volunteer-item">
+	
+									<input id="volunteer-item-7" type="checkbox" class="toggle-item"/>
+								<label for="volunteer-item-7"></label>
+	
+							<header class="clear">
+	
+										<div class="position">
+											Board member
+										</div>
+									<div class="organization">
+										Proxxi
+									</div>
+	
+								<div class="date">
+										<span class="startDate">
+											Jan 2008
+										</span>
+										<span class="endDate">
+	          - Jan 2010
+	          </span>
+								</div>
+							</header>
+						<div class="item">
+								<div class="summary"><p>Proxxi used to be a non-profit location for computer/hacking/computer games and board games that were around since early 1980's, sadly the space closed down in 2012 due to an unfortunate series of events and never managed to recover the active members.</p></div>
+						</div>
+					</section>
+					<section class="volunteer-item">
+	
+									<input id="volunteer-item-8" type="checkbox" class="toggle-item"/>
+								<label for="volunteer-item-8"></label>
+	
+							<header class="clear">
+	
+										<div class="position">
+											President
+										</div>
+									<div class="organization">
+										Röda Handen
+									</div>
+	
+								<div class="date">
+										<span class="startDate">
+											Jan 2004
+										</span>
+										<span class="endDate">
+	          - Jan 2006
+	          </span>
+								</div>
+							</header>
+						<div class="item">
+								<div class="summary"><p>Started and maintained a small gaming club among my friends where I lived.</p></div>
+						</div>
+					</section>
+			</section>
+		</section>
+		<section class="section">
+			<header>
+				<h2 class='section-title'>Languages</h2>
+			</header>
+	
+			<section id="languages">
+					<div class="display">
+							<h3 class="language">
+								Swedish
+							</h3>
+	
+						<div class="item">
+								<div class="level fluency native speaker">
+										<em>Native speaker</em>
+									<div class="bar"></div>
+								</div>
+						</div>
+					</div>
+					<div class="display">
+							<h3 class="language">
+								English
+							</h3>
+	
+						<div class="item">
+								<div class="level fluency fluent">
+										<em>Fluent</em>
+									<div class="bar"></div>
+								</div>
+						</div>
+					</div>
+			</section>
+		</section>
+		<section class="section">
+			<header>
+				<h2 class='section-title' class='section-title'>Interests</h2>
+			</header>
+			<section id="interests">
+					<div class="item">
+							<h3 class="name">
+								Free software
+							</h3>
+							<ul class="keywords">
+									<li>Linux</li>
+									<li>Software Freedom</li>
+									<li>NixOS</li>
+									<li>Emacs</li>
+							</ul>
+					</div>
+					<div class="item">
+							<h3 class="name">
+								Health and fitness
+							</h3>
+							<ul class="keywords">
+									<li>Eating</li>
+									<li>Fitness</li>
+									<li>Mental health</li>
+									<li>Weight management</li>
+							</ul>
+					</div>
+			</section>
+		</section>
+</div>
+</body>
+</html>
