@@ -3,7 +3,7 @@
 
   basics = {
     name = "Elis Hirwing";
-    label = "Lead Backend Developer";
+    label = "Lead Backend Developer at TV.nu / Founder at Taserud Consulting AB";
     image = "./headshot.jpg";
     email = "elis@hirwing.se";
     phone = "+46 452 12 98";
@@ -23,14 +23,33 @@
         url = "https://linkedin.com/in/elishirwing/";
       }
       {
+        network = "LinkedIn";
+        username = "taserud-consulting";
+        url = "https://www.linkedin.com/company/taserud-consulting/";
+      }
+      {
         network = "GitHub";
         username = "etu";
         url = "https://github.com/etu";
+      }
+      {
+        network = "GitHub";
+        username = "TaserudConsulting";
+        url = "https://github.com/TaserudConsulting";
       }
     ];
   };
 
   work = [
+    {
+      name = "Taserud Consulting AB";
+      location = "Remote / Arvika";
+      position = "Founder / Consultant";
+      url = "https://taserud.net";
+      startDate = "2023-08-02";
+      summary = "Founder of my own consulting company to be able to do consulting by the side of my job at TV.nu.";
+      highlights = [];
+    }
     {
       name = "TV.nu Sweden AB";
       location = "Stockholm / Remote";
