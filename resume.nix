@@ -168,13 +168,13 @@
       endDate = "2010";
       summary = "Founded Konventare.se where some friends and I listed most Games and Anime conventions in Sweden to make one go-to place for people to find them.";
     }
-    {
-      organization = "Sverok";
-      position = "Representative at Annual meeting";
-      startDate = "2008";
-      endDate = "2010";
-      summary = "Represented several different non-profit organizations interests at the big annual meeting.";
-    }
+    #{
+    #  organization = "Sverok";
+    #  position = "Representative at Annual meeting";
+    #  startDate = "2008";
+    #  endDate = "2010";
+    #  summary = "Represented several different non-profit organizations interests at the big annual meeting.";
+    #}
     {
       organization = "Proxxi";
       position = "Board member";
@@ -182,13 +182,13 @@
       endDate = "2010";
       summary = "Proxxi used to be a non-profit location for computer/hacking/computer games and board games that were around since early 1980's, sadly the space closed down in 2012 due to an unfortunate series of events and never managed to recover the active members.";
     }
-    {
-      organization = "Röda Handen";
-      position = "Founder";
-      startDate = "2004";
-      endDate = "2006";
-      summary = "Started and maintained a small gaming club among my friends where I lived.";
-    }
+    #{
+    #  organization = "Röda Handen";
+    #  position = "Founder";
+    #  startDate = "2004";
+    #  endDate = "2006";
+    #  summary = "Started and maintained a small gaming club among my friends where I lived.";
+    #}
   ];
 
   education = [
