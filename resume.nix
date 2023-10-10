@@ -359,7 +359,7 @@
   projects = [
     {
       name = "NixOS advocate";
-      description = "Nix is fun";
+      description = "Been using NixOS since 2017 and been a package maintainer since 2018. I've been to the community conference once and would have liked to been there more times. However, due to circumstances with other responsibilites that haven't been possible.";
       highlights = [
         "Part of modular PHP builds."
         "Part of bootstrapping of the emacs overlay."
