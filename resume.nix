@@ -163,7 +163,7 @@
     }
     {
       organization = "Konventare.se";
-      position = "President";
+      position = "Founder / President / Developer";
       startDate = "2008";
       endDate = "2010";
       summary = "Founded Konventare.se where some friends and I listed most Games and Anime conventions in Sweden to make one go-to place for people to find them.";
@@ -184,7 +184,7 @@
     }
     {
       organization = "Röda Handen";
-      position = "President";
+      position = "Founder";
       startDate = "2004";
       endDate = "2006";
       summary = "Started and maintained a small gaming club among my friends where I lived.";
