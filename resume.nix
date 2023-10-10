@@ -301,6 +301,20 @@
         "Python"
       ];
     }
+    {
+      name = "Kubernetes";
+      level = "Fluent";
+      keywords = [
+        "Self-managed on-prem Kubernets"
+        "Helm"
+        "Ansible"
+        "Kubespray"
+        "Monitoring"
+        "Prometheus"
+        "Grafana"
+        "InfluxDB"
+      ];
+    }
   ];
 
   languages = [
