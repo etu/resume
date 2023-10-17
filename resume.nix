@@ -8,7 +8,7 @@
     email = "elis@hirwing.se";
     phone = "+46 452 12 98";
     url = "https://elis.nu";
-    summary = "I'm DevOps engineer who can manage everything from backend API development. Managing operating systems. Backups and restoration. Even hardware purchases for on-premises hardware.";
+    summary = "I'm a DevOps engineer who can manage everything from backend API development. Managing operating systems. Backups and restoration. Even hardware purchases for on-premises hardware.";
     location = {
       address = "Repslagaregatan 20A";
       postalCode = "67130";
