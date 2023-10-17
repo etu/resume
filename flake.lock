@@ -25,11 +25,11 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1696967370,
-        "narHash": "sha256-WMWqq/re/hnQPESR4vmXA94G/YMkIdf51Z8a+0a9Q/s=",
+        "lastModified": 1697570667,
+        "narHash": "sha256-VaHby+ttV1eVo0+4BU6avcfpQuJlMaorcSaUv9WLxY8=",
         "owner": "TaserudConsulting",
         "repo": "jsonresume-nix",
-        "rev": "09ac4c382532c4d2fdc07cf257f3caa60ec55bed",
+        "rev": "d019043fd8bac6697887fec03c52438a35ee123f",
         "type": "github"
       },
       "original": {
