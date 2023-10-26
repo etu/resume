@@ -5,6 +5,8 @@ name: Check
   push:
   pull_request:
     branches: main
+    types:
+      - opened
 
 jobs:
   check:
