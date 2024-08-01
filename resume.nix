@@ -40,6 +40,15 @@
     ];
   };
 
+  certificates = [
+    {
+      name = "Certified Kubernetes Administrator (CKA)";
+      date = "2024-08-01";
+      url = "https://ti-user-certificates.s3.amazonaws.com/e0df7fbf-a057-42af-8a1f-590912be5460/d10c7fac-c049-488c-9bfd-026897760f78-elis-sture-hirwing-2b5ebd4b-feb6-49f6-ac03-7d6e583b52d7-certificate.pdf";
+      issuer = "The Linux Foundation";
+    }
+  ];
+
   work = [
     {
       name = "Taserud Consulting AB";
@@ -303,7 +312,7 @@
     }
     {
       name = "Kubernetes";
-      level = "Fluent";
+      level = "Master";
       keywords = [
         "Self-managed on-prem Kubernets"
         "Helm"
