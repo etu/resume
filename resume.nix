@@ -6,7 +6,7 @@
     label = "Lead Backend Developer at TV.nu / Founder at Taserud Consulting AB";
     image = "./headshot.jpg";
     email = "elis@hirwing.se";
-    phone = "+46 452 12 98";
+    phone = "+46 70 452 12 98";
     url = "https://elis.nu";
     summary = "I'm a DevOps engineer who can manage everything from backend API development. Managing operating systems. Backups and restoration. Even hardware purchases for on-premises hardware.";
     location = {
