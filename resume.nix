@@ -409,6 +409,14 @@
         "Climbing"
       ];
     }
+    {
+      name = "3D Printing";
+      keywords = [
+        "OpenSCAD"
+        "Modeling"
+        "Printing"
+      ];
+    }
   ];
 
   references = [
