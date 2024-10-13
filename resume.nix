@@ -72,8 +72,8 @@
         if the customer is open to that choice. Otherwise I'll work with
         any Linux distribution.
 
-        I'm also working with backups, reproducibe builds, CI/CD pipelines,
-        high availability, security through reproducibiity and testability.
+        I'm also working with backups, reproducible builds, CI/CD pipelines,
+        high availability, security through reproducibility and testability.
       '';
       highlights = [];
     }
