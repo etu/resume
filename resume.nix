@@ -16,7 +16,7 @@
       significant projects, built high-availability systems, and helped teams
       transition to modern architectures.
 
-      I'm passionate about free and open-source software, containerization, 
+      I'm passionate about free and open-source software, containerization,
       and continuous improvement in all facets of development.
     '';
     location = {
