@@ -5,11 +5,11 @@
         "systems": "systems"
       },
       "locked": {
-        "lastModified": 1710146030,
-        "narHash": "sha256-SZ5L6eA7HJ/nmkzGG7/ISclqe6oZdOZTNoesiInkXPQ=",
+        "lastModified": 1726560853,
+        "narHash": "sha256-X6rJYSESBVr3hBoH0WbKE5KvhPU5bloyZ2L4K60/fPQ=",
         "owner": "numtide",
         "repo": "flake-utils",
-        "rev": "b1d9ab70662946ef0850d488da1c9019f3a9752a",
+        "rev": "c1dfcf08411b08f6b8615f7d8971a2bfa81d5e8a",
         "type": "github"
       },
       "original": {
@@ -25,11 +25,11 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1722540463,
-        "narHash": "sha256-m/qoBmZ8N4v9VPHB5zl+SiTczqFeELVmm+U5CJo1ohs=",
+        "lastModified": 1728818368,
+        "narHash": "sha256-NcK1yzTLx+rWPHI1hW3Yjbv2UcUDqXgIRv7XkxcGa58=",
         "owner": "TaserudConsulting",
         "repo": "jsonresume-nix",
-        "rev": "cddd32d0a71091fbb86f08c3c2ca9379f930a3d5",
+        "rev": "c00f0867d41d01078d66dee0fb3f7cf1bfe3a22d",
         "type": "github"
       },
       "original": {
@@ -54,12 +54,10 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1722415718,
-        "narHash": "sha256-5US0/pgxbMksF92k1+eOa8arJTJiPvsdZj9Dl+vJkM4=",
-        "owner": "NixOS",
-        "repo": "nixpkgs",
-        "rev": "c3392ad349a5227f4a3464dce87bcc5046692fce",
-        "type": "github"
+        "lastModified": 0,
+        "narHash": "sha256-9UTxR8eukdg+XZeHgxW5hQA9fIKHsKCdOIUycTryeVw=",
+        "path": "/nix/store/60sn02zhawl3kwn0r515zff3h6hg6ydz-source",
+        "type": "path"
       },
       "original": {
         "id": "nixpkgs",
