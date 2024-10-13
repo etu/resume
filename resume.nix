@@ -9,15 +9,15 @@
     phone = "+46 70 452 12 98";
     url = "https://elis.nu";
     summary = ''
-      I'm a DevOps and Backend Engineer with a proven track record of building
+      I'm a DevOps and Backend Developer with a proven track record of building
       scalable infrastructures and optimizing backend systems.
 
       With over a decade of experience across various tech stacks, I've led
       significant projects, built high-availability systems, and helped teams
       transition to modern architectures.
 
-      I'm passionate about open-source, containerization, and continuous
-      improvement in all facets of development.
+      I'm passionate about free and open-source software, containerization, 
+      and continuous improvement in all facets of development.
     '';
     location = {
       address = "Repslagaregatan 20A";
