@@ -9,15 +9,11 @@
     phone = "+46 70 452 12 98";
     url = "https://elis.nu";
     summary = ''
-      I'm a DevOps and Backend Developer with a proven track record of building
-      scalable infrastructures and optimizing backend systems.
+      I'm a DevOps and Backend Developer with a proven track record of building scalable infrastructures and optimizing backend systems.
 
-      With over a decade of experience across various tech stacks, I've led
-      significant projects, built high-availability systems, and helped teams
-      transition to modern architectures.
+      With over a decade of experience across various tech stacks, I've led significant projects, built high-availability systems, and helped teams transition to modern architectures.
 
-      I'm passionate about free and open-source software, containerization,
-      and continuous improvement in all facets of development.
+      I'm passionate about free and open-source software, containerization, and continuous improvement in all facets of development.
     '';
     location = {
       address = "Repslagaregatan 20A";
@@ -67,13 +63,9 @@
       url = "https://taserud.net";
       startDate = "2023-08-02";
       summary = ''
-        I founded Taserud Consulting to provide specialized consulting
-        services in backend development and DevOps with a focus on NixOS
-        if the customer is open to that choice. Otherwise I'll work with
-        any Linux distribution.
+        I founded Taserud Consulting to provide specialized consulting services in backend development and DevOps with a focus on NixOS if the customer is open to that choice. Otherwise I'll work with any Linux distribution.
 
-        I'm also working with backups, reproducible builds, CI/CD pipelines,
-        high availability, security through reproducibility and testability.
+        I'm also working with backups, reproducible builds, CI/CD pipelines, high availability, security through reproducibility and testability.
       '';
       highlights = [];
     }
@@ -84,37 +76,17 @@
       url = "https://tv.nu";
       startDate = "2016-04";
       summary = ''
-        I started at TV.nu as a Senior Backend Developer and progressed
-        into a Lead role. My team is responsible for maintaining the
-        core API and infrastructure, ensuring high availability, and
-        ingesting data from multiple third-party sources.
+        I started at TV.nu as a Senior Backend Developer and progressed into a Lead role. My team is responsible for maintaining the core API and infrastructure, ensuring high availability, and ingesting data from multiple third-party sources.
 
-        I also led key migrations to modernize the backend and improve
-        system performance.
+        I also led key migrations to modernize the backend and improve system performance.
       '';
       highlights = [
-        ''
-          Introduced TLS termination and HTTPS with HAProxy, securing user
-          data and improving trust and high availability entry to the systems.
-        ''
-        ''
-          Upgraded the entire system from PHP 5.5 to 8.1, resulting
-          in significant performance improvements.
-        ''
-        ''
-          Pioneered a modular front page API to allow for different data
-          types to be rendered depening on user selection and client
-          capabilities to render different versions of different content.
-        ''
-        ''
-          Implemented Docker across all environments to streamline
-          development and deployment.
-        ''
+        "Introduced TLS termination and HTTPS with HAProxy, securing user data and improving trust and high availability entry to the systems."
+        "Upgraded the entire system from PHP 5.5 to 8.1, resulting in significant performance improvements."
+        "Pioneered a modular front page API to allow for different data types to be rendered depening on user selection and client capabilities to render different versions of different content."
+        "Implemented Docker across all environments to streamline development and deployment."
         "Led migration from legacy infrastructure to containers on Kubernetes."
-        ''
-          Managed a zero-downtime migration of MySQL to MariaDB 10.6,
-          improving database performance and scalability.
-        ''
+        "Managed a zero-downtime migration of MySQL to MariaDB 10.6, improving database performance and scalability."
       ];
     }
     {
@@ -124,16 +96,9 @@
       url = "https://shopello.se";
       startDate = "2014-04";
       endDate = "2016-04";
-      summary = ''
-        At Shopello, I developed and maintained a shopping search engine,
-        handling ingestion of large datasets and working on API
-        improvements to better handle high traffic.
-      '';
+      summary = "At Shopello, I developed and maintained a shopping search engine, handling ingestion of large datasets and working on API improvements to better handle high traffic.";
       highlights = [
-        ''
-          Pioneered a new API for scaling faster while maintaining
-          data integrity with signed links.
-        ''
+        "Pioneered a new API for scaling faster while maintaining data integrity with signed links."
         "Introduced XML file streaming to handle large datasets more efficiently."
       ];
     }
@@ -144,12 +109,7 @@
       url = "https://www.tailorstore.com/";
       startDate = "2011-11";
       endDate = "2014-04";
-      summary = ''
-        I maintained the main website and admin systems, along with
-        managing servers and the office network. My contributions
-        played a key role in improving the overall system reliability
-        and performance.
-      '';
+      summary = "I maintained the main website and admin systems, along with managing servers and the office network. My contributions played a key role in improving the overall system reliability and performance.";
       highlights = [
         "Led purchases and setup of new server infrastructure with HAProxy for high availability."
         "Designed a flexible product design API that’s still in use today."
@@ -163,10 +123,7 @@
       url = "https://southpole.se";
       startDate = "2011-09";
       endDate = "2011-11";
-      summary = ''
-        Short time contract to assemble computer clusters for universities
-        in Sweden with more than 400 computers per cluster.
-      '';
+      summary = "Short time contract to assemble computer clusters for universities in Sweden with more than 400 computers per cluster.";
     }
     {
       name = "Webhallen Sverige AB";
@@ -175,12 +132,7 @@
       url = "https://webhallen.com";
       startDate = "2011-01";
       endDate = "2011-08";
-      summary = ''
-        I maintained the main website and admin systems, along with
-        managing servers and the office network. My contributions
-        played a key role in improving the overall system reliability
-        and performance.
-      '';
+      summary = "I maintained the main website and admin systems, along with managing servers and the office network. My contributions played a key role in improving the overall system reliability and performance.";
       highlights = [
         "Key role in implementing imports of data sheets from external systems."
         "Key role in implementing DLC product keys for game purchases."
@@ -192,11 +144,7 @@
       position = "IT-Support / Web Admin / Web Developer";
       startDate = "2010-03";
       endDate = "2010-11";
-      summary = ''
-        Most of my work was to answer phone calls to support the software
-        in a Windows environment. I were also part of bootstrapping the
-        development of a new web-based project for future endeavors.
-      '';
+      summary = "Most of my work was to answer phone calls to support the software in a Windows environment. I were also part of bootstrapping the development of a new web-based project for future endeavors.";
     }
   ];
 
@@ -430,12 +378,9 @@
     {
       name = "NixOS Advocate";
       description = ''
-        I’ve been an active contributor to the NixOS community since 2017,
-        maintaining packages and advocating for the use of NixOS in
-        production environments.
+        I’ve been an active contributor to the NixOS community since 2017, maintaining packages and advocating for the use of NixOS in production environments.
 
-        I've also authored blog posts and contributed to modular PHP
-        builds and bootstrapped overlays like the Emacs overlay.
+        I've also authored blog posts and contributed to modular PHP builds and bootstrapped overlays like the Emacs overlay.
       '';
       highlights = [
         "Maintained core PHP packages."
