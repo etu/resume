@@ -155,12 +155,13 @@
       startDate = "2023";
       summary = "Secretary of the board of the non-profit gaming association in Arvika.";
     }
-    {
-      organization = "Riksbyggen Bostadsrättsförening Arvikahus nr 3";
-      position = "Vice-President";
-      startDate = "2022";
-      summary = "Vice-President of the board of the association that owns the buildings I live in.";
-    }
+    #{
+    #  organization = "Riksbyggen Bostadsrättsförening Arvikahus nr 3";
+    #  position = "Vice-President";
+    #  startDate = "2022";
+    #  endDate = "2024";
+    #  summary = "Vice-President of the board of the association that owns the buildings I live in.";
+    #}
     #{
     #  organization = "Unga Forskare Stockholm";
     #  position = "Board Member / Auditor";
