@@ -24,6 +24,16 @@
     };
     profiles = [
       {
+        network = "Instagram";
+        username = "elis.hirwing";
+        url = "https://instagram.com/elis.hirwing/";
+      }
+      {
+        network = "Facebook";
+        username = "elishirwing";
+        url = "https://facebook.com/elishirwing/";
+      }
+      {
         network = "LinkedIn";
         username = "elishirwing";
         url = "https://linkedin.com/in/elishirwing/";
