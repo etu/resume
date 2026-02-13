@@ -1,5 +1,0 @@
-* My awesome jsonresume
-
-My awesome resume is built on [[https://jsonresume.org/][jsonresume]] but instead of building it with
-json, I've chosen to use [[https://nixos.org][nix]] with this project [[https://github.com/TaserudConsulting/jsonresume-nix][jsonresume-nix]] by [[https://taserud.net][Taserud
-Consulting]].
