@@ -1,7 +1,7 @@
 {
   description = "Your personal jsonresume built with Nix";
 
-  inputs.jsonresume-nix.url = "github:TaserudConsulting/jsonresume-nix";
+  inputs.jsonresume-nix.url = "github:etu/jsonresume-nix";
   inputs.jsonresume-nix.inputs.flake-utils.follows = "flake-utils";
   inputs.flake-utils.url = "flake-utils";
 
@@ -23,7 +23,7 @@
       # will decide which theme to use.
       #
       # To show available packaged themes:
-      # nix flake show github:TaserudConsulting/jsonresume-nix
+      # nix flake show github:etu/jsonresume-nix
       #
       # If you miss a theme, consider opening a pull request :)
       packages = {
@@ -46,7 +46,11 @@
       # Allows to run a live preview server using "nix run .#live"
       apps = {
         live.type = "app";
-        live.program = lib.getExe (jsonresume-nix.lib.${system}.buildLiveServer self.packages.${system}.builder);
+        live.program = lib.getExe (jsonresume-nix.lib.${system}.buildLiveServer {
+          builderDerivation = self.packages.${system}.builder;
+          # Optionally override the live server implementation:
+          # liveServerPackage = <your-custom-package>;
+        });
 
         print.type = "app";
         print.program = lib.getExe (jsonresume-nix.lib.${system}.buildPrintToPdf {
