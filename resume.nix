@@ -29,19 +29,9 @@
         url = "https://linkedin.com/in/elishirwing/";
       }
       {
-        network = "LinkedIn";
-        username = "taserud-consulting";
-        url = "https://www.linkedin.com/company/taserud-consulting/";
-      }
-      {
         network = "GitHub";
         username = "etu";
         url = "https://github.com/etu";
-      }
-      {
-        network = "GitHub";
-        username = "TaserudConsulting";
-        url = "https://github.com/TaserudConsulting";
       }
     ];
   };
@@ -56,19 +46,6 @@
   ];
 
   work = [
-    {
-      name = "Taserud Consulting AB";
-      location = "Remote / Arvika";
-      position = "Founder / Consultant";
-      url = "https://taserud.net";
-      startDate = "2023-08-02";
-      summary = ''
-        I founded Taserud Consulting to provide specialized consulting services in backend development and DevOps with a focus on NixOS if the customer is open to that choice. Otherwise I'll work with any Linux distribution.
-
-        I'm also working with backups, reproducible builds, CI/CD pipelines, high availability, security through reproducibility and testability.
-      '';
-      highlights = [];
-    }
     {
       name = "TV.nu Sweden AB";
       location = "Stockholm / Remote";
@@ -88,6 +65,19 @@
         "Led migration from legacy infrastructure to containers on Kubernetes."
         "Managed a zero-downtime migration of MySQL to MariaDB 10.6, improving database performance and scalability."
       ];
+    }
+    {
+      name = "Taserud Consulting AB";
+      location = "Remote / Arvika";
+      position = "Founder / Consultant";
+      startDate = "2023-08";
+      endDate = "2026-02";
+      summary = ''
+        I founded Taserud Consulting to provide specialized consulting services in backend development and DevOps with a focus on NixOS if the customer is open to that choice. Otherwise I'll work with any Linux distribution.
+
+        I'm also working with backups, reproducible builds, CI/CD pipelines, high availability, security through reproducibility and testability.
+      '';
+      highlights = [];
     }
     {
       name = "Shopello International AB / 203 Brands AB";
