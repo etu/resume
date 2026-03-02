@@ -31,7 +31,7 @@
       {
         network = "Facebook";
         username = "elishirwing";
-        url = "https://facebook.com/elishirwing/";
+        url = "https://facebook.com/elis.hirwing/";
       }
       {
         network = "LinkedIn";
