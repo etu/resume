@@ -25,11 +25,11 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1782302734,
-        "narHash": "sha256-/zzGl++Lj6QQ3EBoWN96+pAwYfGFZQD+qSgBBqlvduM=",
+        "lastModified": 1784721225,
+        "narHash": "sha256-oi+njMTnrqxEYVAdLs3j7qinrvUIJOUeIAUy4Ss5OJE=",
         "owner": "etu",
         "repo": "jsonresume-nix",
-        "rev": "5d9da1c2c4383a622467f8d864dd2ce72708751f",
+        "rev": "83af363ccae627b34397e4d458d10f33d7425623",
         "type": "github"
       },
       "original": {
@@ -54,12 +54,12 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1781577229,
-        "narHash": "sha256-lrp67w8AulE9Ks53n27I45ADSzbOCn4H+CNW1Ck8B+8=",
-        "rev": "567a49d1913ce81ac6e9582e3553dd90a955875f",
-        "revCount": 1017464,
+        "lastModified": 1787498568,
+        "narHash": "sha256-9i/VTdusq/+NM/tz+J1Re+ojkMB8MBf0QshnYfzHz30=",
+        "rev": "56c02bc00adcf003215cc4bd996d6efaf4cff188",
+        "revCount": 1060451,
         "type": "tarball",
-        "url": "https://api.flakehub.com/f/pinned/DeterminateSystems/nixpkgs-weekly/0.1.1017464%2Brev-567a49d1913ce81ac6e9582e3553dd90a955875f/019f1749-32d6-7283-9e9a-861bd8478e6a/source.tar.gz"
+        "url": "https://api.flakehub.com/f/pinned/DeterminateSystems/nixpkgs-weekly/0.1.1060451%2Brev-56c02bc00adcf003215cc4bd996d6efaf4cff188/01a05b78-a1af-7e32-b8fa-6b77e11317d1/source.tar.gz"
       },
       "original": {
         "id": "nixpkgs",
